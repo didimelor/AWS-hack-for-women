@@ -1,0 +1,26 @@
+.viajeWrapper{
+    background-color: #FFECD1;
+    color: #001524;
+    padding: 15px;
+    height: 100vh;
+    overflow: scroll;
+}
+.cardGuia{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #15616d;
+    margin: auto;
+    width: 50%;
+    padding: 2%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #15616d;
+}
+.titulo{
+    font-weight: bold;
+}
+
+.uploadImgWrap{
+    background-color: #FFECD1;
+    padding: 15px;
+}

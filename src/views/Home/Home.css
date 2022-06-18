@@ -1,0 +1,205 @@
+
+.home-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #FFECD1;
+    padding: 10px;
+    height: 120vh;
+  }
+
+  .home-wrapper > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+  }
+
+  .saludo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 50px;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    color: #15616D;
+  }
+
+  .activeWrapper{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    margin-right: 20px;
+    padding-left: 20px;
+  }
+
+  #mapaViaje {
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+  }
+  .botonIniciaViaje{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .notifications{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    overflow: scroll;
+  }
+
+  .amigos{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+
+.switchWrapper{
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FF7D00;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FF7D00;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .botonNoti {
+    background-color: rgba(0,0,0,0); /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .redOne{
+    border: 2px solid red; 
+    border-radius: 20px;
+  }
+
+  .aceptar {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .aceptar:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .botonIniciaViaje{
+    background-color: white; 
+    color: black; 
+  }
+
+  .botonIniciaViaje:hover {
+    background-color: #FF7D00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+  }
+
+  .rechazar {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+  }
+  
+  .rechazar:hover {
+    background-color: #FF0000;
+    color: white;
+  }
+
+  .card{
+    border: 1px solid #78290F;
+    color: #78290F;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+
+  .gridNotifications{
+    margin-right: 4px;
+    overflow-x: scroll;
+  }

@@ -1,0 +1,29 @@
+.outerHeaderWrapper{
+    height: 15vh;
+    background-color: #15616d;
+    display: flex;
+    padding: 2%;
+    justify-content: end;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+  }
+  .profileBody{
+    padding: 20px;
+  }
