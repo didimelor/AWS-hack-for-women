@@ -6,7 +6,15 @@ import Home from './views/Home/Home'
 import LogIn from './views/LogIn/LogIn';
 import Viaje from './views/Viaje/Viaje';
 
-function App() {
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+Amplify.configure(awsExports);
+
+
+function App({ signOut, user }) {
   return (
     <>
     {}
@@ -21,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
