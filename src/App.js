@@ -6,7 +6,6 @@ import Home from './views/Home/Home'
 import LogIn from './views/LogIn/LogIn';
 import Viaje from './views/Viaje/Viaje';
 
-
 function App() {
   return (
     <>
